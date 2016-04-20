@@ -15,6 +15,38 @@
         <next>
           <block type="oled_drawtext" id="163">
             <field name="TEXT">HI</field>
+            <next>
+              <block type="robot_delay" id="284" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="291">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_cleardisplay" id="341">
+                    <next>
+                      <block type="oled_setcursor" id="379" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="392">
+                            <field name="NUM">57</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="411">
+                            <field name="NUM">27</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="multimedia_displaybmp" id="560">
+                            <field name="BMP">bmp.bmp</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
